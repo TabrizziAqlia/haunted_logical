@@ -1,0 +1,94 @@
+/* ======================================================= */
+/* Efek Latar Belakang Rumah Hantu */
+/* ======================================================= */
+
+body {
+    background-color: #1a1a1a;
+    /* PASTIKAN PATH GAMBAR BENAR. Contoh: './assets/haunted_house.png' */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('./assets/haunted_house.png'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Times New Roman', serif; 
+    color: #e0e0e0; 
+    margin: 0;
+    padding: 0;
+    text-shadow: 1px 1px 2px #000; 
+}
+
+.haunted-container {
+    padding: 20px 20px 80px 20px; 
+}
+
+header {
+    text-align: center;
+    color: #ff4500; 
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.5em;
+    border-bottom: 3px solid #ff4500;
+    padding-bottom: 10px;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Konten Logika di dalam kotak yang lebih mudah dibaca */
+.operator-card, .logika-content {
+    background-color: rgba(0, 0, 0, 0.85); 
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #ff4500; 
+    box-shadow: 0 0 15px rgba(255, 69, 0, 0.5); 
+    margin-bottom: 25px;
+}
+
+.operator-card h2 {
+    color: #ffaa00;
+    border-bottom: 1px solid #ff4500;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+/* Style untuk Tabel Kebenaran */
+.truth-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    color: #aaffaa; 
+}
+
+.truth-table th, .truth-table td {
+    border: 1px solid #444;
+    padding: 12px;
+    text-align: center;
+}
+
+.truth-table th {
+    background-color: #330000; 
+    color: #ffaa00; 
+    text-transform: uppercase;
+}
+
+.truth-table tr:nth-child(even) {
+    background-color: rgba(50, 0, 0, 0.5);
+}
+
+/* Style untuk status hasil studi kasus */
+.status-ok { color: #aaffaa; font-weight: bold; }
+.status-fail { color: #ff4500; font-weight: bold; }
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: #ffaa00;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+}
